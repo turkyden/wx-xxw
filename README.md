@@ -49,7 +49,7 @@ $ npm stop
 
 ## DataBase
 
-### ferry_detail
+### ferry_information
 
 | Name | Description | Type |
 | ------ | ------ | ------ |
