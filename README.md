@@ -64,3 +64,5 @@ $ npm stop
 | ferry_salabilityCar | 可配小车 | `string` |
 | ferry_salabilityCoach | 可配客车 | `string` |
 | ferry_price | 客票票价 | `string` |
+
+### 
