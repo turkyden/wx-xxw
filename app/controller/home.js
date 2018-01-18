@@ -4,7 +4,8 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    this.ctx.body = 'hi, dengdeng';
+    const ferryInfo = await this.ctx.service.crawler.getFerryService();
+    this.ctx.body = ferryInfo;
   }
 }
 

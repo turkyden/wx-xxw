@@ -4,9 +4,12 @@
   "description": "this is my first wx app",
   "private": true,
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "egg": "^2.0.0",
+    "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.1.0",
-    "egg-view-nunjucks": "^2.1.4"
+    "egg-view-nunjucks": "^2.1.4",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",

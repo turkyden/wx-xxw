@@ -1,8 +1,7 @@
-exports.index = async () => {
-    this.ctx.body = {
-        userId: `hello i am a Get`,
-        age: 56,
-    };
+'use strict';
+
+exports.index = async (ctx) => {
+    ctx.body = 'hi, i am get';
 };
 
 exports.new = async () => { };
