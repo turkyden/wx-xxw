@@ -2,6 +2,20 @@
 
 this is my first wx app
 
+## 项目进度
+
+- 需求 & idea
+- 小程序原型
+- egg.js框架初始化服务端工程
+- nodejs平台MVC初探
+- MVC到RestfulAPI开发
+- crawler爬虫入门
+- mysql数据库安装与使用
+- 数据库设计
+- API开发与调试
+- 小程序开发与对接联调
+- ng-rcs后台管理系统开发
+
 ## QuickStart
 
 <!-- add docs here for user -->
