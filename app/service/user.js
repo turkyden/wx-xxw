@@ -8,18 +8,13 @@ class UserService extends Service {
       // 就可以直接通过 this.ctx 获取 ctx 了
       // 还可以直接通过 this.app 获取 app 了
     }
-    async find(uid) {
+
+    async find() {
         // 假如 我们拿到用户 id 从数据库获取用户详细信息
-        const user = await this.ctx.db.query('select * from user where uid = ?', uid);
-
+        const user = await this.app.mysql.get('user', { user_id: 110012 });
         // 假定这里还有一些复杂的计算，然后返回需要的信息。
-        const picture = await this.getPicture(uid);
-
-        return {
-            name: user.user_name,
-            age: user.age,
-            picture,
-        };
+        const picture = '';
+        return user ;
     }
 
     async getPicture(uid) {
