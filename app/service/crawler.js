@@ -45,7 +45,6 @@ class CrawlerService extends Service {
             }
             return res;
         }
-        //海安港
         return array.unique();
     }
     //存储数据至数据库
@@ -55,7 +54,7 @@ class CrawlerService extends Service {
         if (ferryArr.length>0) {
             result = await this.app.mysql.insert('ferry', ferryArr);
             if (result.affectedRows > 0){
-                return "已抓取并且插入【" + result.affectedRows + "】条数据至数据库";
+                return "已抓取并且插入【 " + result.affectedRows + " 】条数据至数据库";
             } else {
                 return "数据库存储失败";
             }
